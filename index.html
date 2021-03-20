@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <title>GitFlow Workflow</title>
+  </head>
+<!--
+Sided Template
+https://templatemo.com/tm-527-sided
+-->
+  <body>
+    <div class="columns-bg">
+      <!-- Logo & Intro -->
+      <section id="logo" class="tm-section-logo">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 offset-sm-0 col-md-6 offset-md-6">
+              <div class="tm-site-name-container">
+                <div class="tm-site-name-container-inner">
+                  <h1 class="text-uppercase tm-text-primary tm-site-name">
+                    GitFlow Workflow
+                  </h1>
+                  <p class="tm-text-primary tm-site-description">
+                    Gitflow es uno de los muchos estilos de flujos de trabajo de Git.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Intro -->
+      <section id="intro" class="tm-p-1-section-1">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="tm-section-text-container">
+                <i class="tm-text-white">
+                  <p class="mb-0">
+                    Gitflow es una especie de idea abstracta de un flujo de trabajo de Git.
+                    Este flujo de trabajo define un modelo 
+                    estricto de <b>ramificación diseñado alrededor de la 
+                    publicación del proyecto</b>, por lo tanto es ideal 
+                    para los proyectos que tienen un ciclo de publicación programado. 
+                    
+                  </p>
+                  <p>
+                    Proporciona un marco sólido 
+                    para gestionar proyectos grandes asignando funciones muy específicas a 
+                    las diferentes ramas y define cómo y cuándo deben interactuar
+                  </p>
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Place -->
+      <section id="master_develop">
+        <div class="container-fluid">
+          <div class="row">
+            <div
+              class="col-md-12 col-lg-6 tm-section-image-container tm-img-left-container"
+            >
+              <img src="img/master_develop.svg" alt="Image" class="img-fluid" />
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="tm-section-text-container-2">
+                <h2
+                  class="tm-text-primary tm-section-title-mb tm-sm-bg-white-alpha"
+                >
+                  Master & Develop
+                </h2>
+                <div class="tm-text-gray">
+                  <p class="mb-4">
+                    El flujo comienza con dos ramas, la rama Maestra (Master) y la rama de Desarrollo (Develop).
+                    Ambas tienen el propósito principal de registrar el historial del proyecto.
+                    La rama maestra almacena el historial de la publicación oficial. La rama de desarrollo existe para
+                    registrar integración de otras funciones.
+                  </p>
+                  <p class="mb-0">
+                    El primer paso es crear una rama de Desarrollo a partir de la principal.
+                    Luego, los otros desarrolladores deben clonar el repositorio 
+                    central y crear una rama de seguimiento para desarrollo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fusce, Section 4 -->
+      <section id="feature" class="tm-section-4">
+        <div class="container-fluid">
+          <div class="row flex-column-reverse flex-lg-row">
+            <div class="col-md-12 col-lg-6 tm-text-left-container">
+              <div class="tm-section-text-container-3 tm-bg-white-alpha h-100">
+                <h2 class="tm-text-accent tm-section-title-mb">
+                  Feature
+                </h2>
+                <p class="mb-4">
+                  Las ramas de Función (Feature) salen a partir de la rama de 
+                  Desarrollo con el propósito de integrar las funcionalidades 
+                  requeridas para una publicación.
+                </p>
+                <p class="mb-0">
+                  Cada función que se desarrolle corresponde a una rama propia, esta se puede 
+                  enviar al repositorio central como copia de seguridad o de colaboración. 
+                  Las ramas de función se ramifican a partir de la rama de desarrollo. 
+                  Cuando una función está completa, se vuelve a fusionar en la de desarrollo. 
+                  Las funciones nunca deben interactuar directamente con la maestra.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-md-12 col-lg-6 tm-section-image-container tm-img-right-container"
+            >
+              <img
+                src="img/feature.svg"
+                alt="Image"
+                class="img-fluid tm-img-right"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Place -->
+      <section id="release">
+        <div class="container-fluid">
+          <div class="row">
+            <div
+              class="col-md-12 col-lg-6 tm-section-image-container tm-img-left-container"
+            >
+              <img src="img/release.svg" alt="Image" class="img-fluid" />
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="tm-section-text-container-2">
+                <h2
+                  class="tm-text-primary tm-section-title-mb tm-sm-bg-white-alpha"
+                >
+                  Release
+                </h2>
+                <div class="tm-text-gray">
+                  <p class="mb-4">
+                    Cuando ya se tienen las funcionalidades suficientes para lanzar una versión,
+                    se realiza una ramificación a una rama de publicación a partir de la de Desarrollo.
+                    Cuando se crea esta rama se inicia el siguiente ciclo de publicación. eso quiere decir
+                    que no pueden añadirse nuevas funcionalidades luego de este punto, solo las soluciones de errores, la generación de documentación y otras 
+                    tareas orientadas a la publicación.
+                  </p>
+                  <p class="mb-0">
+                    Una vez que lista para el lanzamiento, la rama de publicación se fusiona en la maestra 
+                    y se etiqueta con un número de versión. Además, debería volver a fusionarse 
+                    en la de desarrollo, que podría haber progresado desde que se inició la 
+                    publicación.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fusce, Section 4 -->
+      <section id="hot_fix" class="tm-section-4">
+        <div class="container-fluid">
+          <div class="row flex-column-reverse flex-lg-row">
+            <div class="col-md-12 col-lg-6 tm-text-left-container">
+              <div class="tm-section-text-container-3 tm-bg-white-alpha h-100">
+                <h2 class="tm-text-accent tm-section-title-mb">
+                  Hot Fix
+                </h2>
+                <p class="mb-4">
+                  Si ocurren errores en la versión publicada de producción, una rama de mantenimiento o
+                  "corrección" (HotFix) se crea para realizar las modificaciones que se requieran.
+                  Esta rama se basa en la rama maestra (Master) y no así en la de Desarrollo (Develop).
+                  Es la única rama que debería bifurcarse directamente a partir de la maestra.
+                </p>
+                <p class="mb-0">
+                  Una vez con la solución completa del error, esta rama se debe unir tanto a la 
+                  maestra (Master) como a la de Desarrollo (Develop) o la rama de publicación actual.
+                  Luego la rama maestra debería etiquetarse con un nuevo número de versión, uno actualizado.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-md-12 col-lg-6 tm-section-image-container tm-img-right-container"
+            >
+              <img
+                src="img/hot_fix.svg"
+                alt="Image"
+                class="img-fluid tm-img-right"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Beautiful Rollovers -->
+      <section id="gallery">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 tm-section-title-mb tm-gallery-title-col">
+              <h2 class="tm-section-title-2">Resumen</h2>
+              <hr class="tm-section-title-underline" />
+            </div>
+
+            <div class="col-12">
+              <div class="grid">
+                <figure class="effect-duke mb-3">
+                  <img
+                    src="img/A.jpg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <h2>Master <span>Develop</span></h2>
+                    <p>Registro histórico del proyecto.</p>
+                    <a href="#">View more</a>
+                  </figcaption>
+                </figure>
+                <figure class="effect-duke">
+                  <img
+                    src="img/A.jpg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <h2><span>Feature</span></h2>
+                    <p>Flujo que añade funcionalidad.</p>
+                    <a href="page-2.html">View more</a>
+                  </figcaption>
+                </figure>
+                <figure class="effect-duke mb-3">
+                  <img
+                    src="img/A.jpg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <h2><span>Release</span></h2>
+                    <p>Lanzamiento de funcionalidad finalizada.</p>
+                    <a href="#">View more</a>
+                  </figcaption>
+                </figure>
+                <figure class="effect-duke">
+                  <img
+                    src="img/A.jpg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <h2><span>Hot Fix</span></h2>
+                    <p>Correcciones rápidas de errores.</p>
+                    <a href="#">View more</a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="col-md-6 tm-section-col-4">
+              <div class="tm-section-text-container-4">
+                <p class="tm-text-secondary mb-0">
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section_3" class="tm-section-4">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="tm-section-text-container-7 tm-bg-dark-gray">
+                <h2 class="tm-section-title-mb tm-text-primary-bright">
+                  COMANDOS
+                </h2>
+                <hr
+                  class="tm-hr-mb tm-hr-primary-bright tm-section-underline ml-0"
+                />
+                <p class="tm-p-mb">
+                  > git .
+                </p>
+                <p class="tm-p-mb">
+                  > git.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="outro">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="tm-section-text-container-5 tm-text-white">
+                <p>
+                  Fabiola Aliaga Salvatierra.
+                </p>
+                <p>
+                  Antonio Pantoja.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <footer class="col-sm-12 col-md-6 offset-md-6 px-md-0">
+              <p class="tm-copyright-text mb-0 tm-text-primary">
+                2021 JALA Dev Bootcamp
+                - Design: <a rel="nofollow" href="https://www.facebook.com/templatemo">TemplateMo</a>
+              </p>
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- /.columns-bg -->
+  </body>
+</html>
