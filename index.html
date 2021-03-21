@@ -29,8 +29,8 @@ https://templatemo.com/tm-527-sided
                     GitFlow Workflow
                   </h1>
                   <p class="tm-text-primary tm-site-description">
-                    Gitflow es uno de los muchos estilos de flujos de trabajo de Git.
-                  </p>
+                    Gitflow is one of the many styles of Git workflows.
+		  </p>
                 </div>
               </div>
             </div>
@@ -45,19 +45,17 @@ https://templatemo.com/tm-527-sided
             <div class="col-md-6">
               <div class="tm-section-text-container">
                 <i class="tm-text-white">
+                  <p class="mb-4">
+                    Gitflow is kind of an abstract idea of a way to work in Git known as workflow. 
+		    This workflow defines a strict branching model <b>designed 
+		    around project publishing</b>, therefore it is ideal for projects
+		    that have a scheduled publish cycle.
+                  </p>
                   <p class="mb-0">
-                    Gitflow es una especie de idea abstracta de un flujo de trabajo de Git.
-                    Este flujo de trabajo define un modelo 
-                    estricto de <b>ramificación diseñado alrededor de la 
-                    publicación del proyecto</b>, por lo tanto es ideal 
-                    para los proyectos que tienen un ciclo de publicación programado. 
-                    
-                  </p>
-                  <p>
-                    Proporciona un marco sólido 
-                    para gestionar proyectos grandes asignando funciones muy específicas a 
-                    las diferentes ramas y define cómo y cuándo deben interactuar
-                  </p>
+                    This provides a robust framework for managing larger projects by 
+		    assigning very specific functions to the different branches 
+		    and define how and when they should interact.                   
+		  </p>
                 </i>
               </div>
             </div>
@@ -83,16 +81,17 @@ https://templatemo.com/tm-527-sided
                 </h2>
                 <div class="tm-text-gray">
                   <p class="mb-4">
-                    El flujo comienza con dos ramas, la rama Maestra (Master) y la rama de Desarrollo (Develop).
-                    Ambas tienen el propósito principal de registrar el historial del proyecto.
-                    La rama maestra almacena el historial de la publicación oficial. La rama de desarrollo existe para
-                    registrar integración de otras funciones.
-                  </p>
+                    The flow begins with two branches, the Master 
+		    and Develop branch. Both have the main purpose of 
+		    recording the history of the project. The master branch 
+		    stores the history of the official release. The development 
+		    branch function is to record integration of features.
+		  </p>
                   <p class="mb-0">
-                    El primer paso es crear una rama de Desarrollo a partir de la principal.
-                    Luego, los otros desarrolladores deben clonar el repositorio 
-                    central y crear una rama de seguimiento para desarrollo.
-                  </p>
+                    The first step is to create a Development branch from the 
+		    main one. Then the other developers should clone the central 
+		    repository and create a follow-up branch for development.             
+		  </p>
                 </div>
               </div>
             </div>
@@ -110,17 +109,18 @@ https://templatemo.com/tm-527-sided
                   Feature
                 </h2>
                 <p class="mb-4">
-                  Las ramas de Función (Feature) salen a partir de la rama de 
-                  Desarrollo con el propósito de integrar las funcionalidades 
-                  requeridas para una publicación.
-                </p>
+		  The Feature branches come out from the Develop branch 
+                  with the purpose of integrating the functionalities
+                  required for a production version.
+		</p>
                 <p class="mb-0">
-                  Cada función que se desarrolle corresponde a una rama propia, esta se puede 
-                  enviar al repositorio central como copia de seguridad o de colaboración. 
-                  Las ramas de función se ramifican a partir de la rama de desarrollo. 
-                  Cuando una función está completa, se vuelve a fusionar en la de desarrollo. 
-                  Las funciones nunca deben interactuar directamente con la maestra.
-                </p>
+                  
+		  Each function that is developed corresponds to its own branch, this can be
+                  submited to the central repository for backup or collaboration.
+		  Feature branches come out from the development branch.
+                  When a function is complete, it is merged back into the develop branch.
+                  Roles should never interact directly with the master branch.
+		</p>
               </div>
             </div>
             <div
@@ -154,18 +154,18 @@ https://templatemo.com/tm-527-sided
                 </h2>
                 <div class="tm-text-gray">
                   <p class="mb-4">
-                    Cuando ya se tienen las funcionalidades suficientes para lanzar una versión,
-                    se realiza una ramificación a una rama de publicación a partir de la de Desarrollo.
-                    Cuando se crea esta rama se inicia el siguiente ciclo de publicación. eso quiere decir
-                    que no pueden añadirse nuevas funcionalidades luego de este punto, solo las soluciones de errores, la generación de documentación y otras 
-                    tareas orientadas a la publicación.
-                  </p>
+		    When the project has enough functionality to launch a version,
+                    a branch is made to a publishing branch (Release) from the Development branch.
+                    When this branch is created, the next publish cycle starts. that means
+                    that no new functionalities can be added after this point, only bug fixes, documentation generation and others
+                    publication-oriented tasks.
+		  </p>
                   <p class="mb-0">
-                    Una vez que lista para el lanzamiento, la rama de publicación se fusiona en la maestra 
-                    y se etiqueta con un número de versión. Además, debería volver a fusionarse 
-                    en la de desarrollo, que podría haber progresado desde que se inició la 
-                    publicación.
-                  </p>
+		    Once ready for the publication, the release branch is merged into the master
+                    and is tagged with a version number. Also, it should re-merge
+                    develop branch, which could have progressed since the beginning of the
+                    publication.
+		  </p>
                 </div>
               </div>
             </div>
@@ -183,16 +183,15 @@ https://templatemo.com/tm-527-sided
                   Hot Fix
                 </h2>
                 <p class="mb-4">
-                  Si ocurren errores en la versión publicada de producción, una rama de mantenimiento o
-                  "corrección" (HotFix) se crea para realizar las modificaciones que se requieran.
-                  Esta rama se basa en la rama maestra (Master) y no así en la de Desarrollo (Develop).
-                  Es la única rama que debería bifurcarse directamente a partir de la maestra.
-                </p>
+		  If errors occur in the released production version, a maintenance branchknown as
+                  HotFix branch, is created to make the modifications that are required.
+                  This branch is based on the master branch (Master) and not on the Development branch (Develop).
+                  It is the only branch that should branch directly from the master.                 </p>
                 <p class="mb-0">
-                  Una vez con la solución completa del error, esta rama se debe unir tanto a la 
-                  maestra (Master) como a la de Desarrollo (Develop) o la rama de publicación actual.
-                  Luego la rama maestra debería etiquetarse con un nuevo número de versión, uno actualizado.
-                </p>
+                  Once with the complete solution of the error, this branch must be joined both to the
+                  Master (Master) and Development (Develop). 
+                  Then the master branch should be tagged with a new version number, an updated one.
+		</p>
               </div>
             </div>
             <div
@@ -213,7 +212,7 @@ https://templatemo.com/tm-527-sided
         <div class="container-fluid">
           <div class="row">
             <div class="col-12 tm-section-title-mb tm-gallery-title-col">
-              <h2 class="tm-section-title-2">Resumen</h2>
+              <h2 class="tm-section-title-2">Summary</h2>
               <hr class="tm-section-title-underline" />
             </div>
 
@@ -227,7 +226,7 @@ https://templatemo.com/tm-527-sided
                   />
                   <figcaption>
                     <h2>Master <span>Develop</span></h2>
-                    <p>Registro histórico del proyecto.</p>
+                    <p>Historical record of the project.</p>
                     <a href="#">View more</a>
                   </figcaption>
                 </figure>
@@ -239,7 +238,7 @@ https://templatemo.com/tm-527-sided
                   />
                   <figcaption>
                     <h2><span>Feature</span></h2>
-                    <p>Flujo que añade funcionalidad.</p>
+                    <p>Flow that adds functionality.</p>
                     <a href="page-2.html">View more</a>
                   </figcaption>
                 </figure>
@@ -251,7 +250,7 @@ https://templatemo.com/tm-527-sided
                   />
                   <figcaption>
                     <h2><span>Release</span></h2>
-                    <p>Lanzamiento de funcionalidad finalizada.</p>
+                    <p>Release of completed feature.</p>
                     <a href="#">View more</a>
                   </figcaption>
                 </figure>
@@ -263,7 +262,7 @@ https://templatemo.com/tm-527-sided
                   />
                   <figcaption>
                     <h2><span>Hot Fix</span></h2>
-                    <p>Correcciones rápidas de errores.</p>
+                    <p>Quick bug fixes.</p>
                     <a href="#">View more</a>
                   </figcaption>
                 </figure>
@@ -286,7 +285,7 @@ https://templatemo.com/tm-527-sided
             <div class="col-12">
               <div class="tm-section-text-container-7 tm-bg-dark-gray">
                 <h2 class="tm-section-title-mb tm-text-primary-bright">
-                  COMANDOS
+                  Commands
                 </h2>
                 <hr
                   class="tm-hr-mb tm-hr-primary-bright tm-section-underline ml-0"
