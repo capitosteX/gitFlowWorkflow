@@ -54,7 +54,9 @@ https://templatemo.com/tm-527-sided
                   <p class="mb-0">
                     This provides a robust framework for managing larger projects by 
 		    assigning very specific functions to the different branches 
-		    and define how and when they should interact.                   
+		    and define how and when they should interact. <b>
+        The benefits of the Feature Branch Workflow are: 
+        pull requests, isolated experiments, and more efficient collaboration.                   
 		  </p>
                 </i>
               </div>
@@ -89,7 +91,7 @@ https://templatemo.com/tm-527-sided
 		  </p>
                   <p class="mb-0">
                     The first step is to create a Development branch from the 
-		    main one. Then the other developers should clone the central 
+		    master branch. Then the other developers should clone the central 
 		    repository and create a follow-up branch for development.             
 		  </p>
                 </div>
@@ -118,8 +120,8 @@ https://templatemo.com/tm-527-sided
 		  Each function that is developed corresponds to its own branch, this can be
                   submited to the central repository for backup or collaboration.
 		  Feature branches come out from the development branch.
-                  When a function is complete, it is merged back into the develop branch.
-                  Roles should never interact directly with the master branch.
+                  When a feature is complete, it is merged back into the develop branch.
+                  A feature branch should never interact directly with the master branch.
 		</p>
               </div>
             </div>
@@ -155,16 +157,19 @@ https://templatemo.com/tm-527-sided
                 <div class="tm-text-gray">
                   <p class="mb-4">
 		    When the project has enough functionality to launch a version,
-                    a branch is made to a publishing branch (Release) from the Development branch.
+                    a publishing branch (Release) is created from the Development branch.
                     When this branch is created, the next publish cycle starts. that means
                     that no new functionalities can be added after this point, only bug fixes, documentation generation and others
                     publication-oriented tasks.
 		  </p>
                   <p class="mb-0">
 		    Once ready for the publication, the release branch is merged into the master
-                    and is tagged with a version number. Also, it should re-merge
-                    develop branch, which could have progressed since the beginning of the
-                    publication.
+                    and is tagged with a version number, also a merge to develop needed. 
+                    
+                    Using a dedicated branch to prepare releases makes it possible for 
+                    one team to polish the current release while another team continues working 
+                    on features for the next release.
+
 		  </p>
                 </div>
               </div>
@@ -183,10 +188,10 @@ https://templatemo.com/tm-527-sided
                   Hot Fix
                 </h2>
                 <p class="mb-4">
-		  If errors occur in the released production version, a maintenance branchknown as
+		  If errors occur in the released production version, a maintenance branch known as
                   HotFix branch, is created to make the modifications that are required.
                   This branch is based on the master branch (Master) and not on the Development branch (Develop).
-                  It is the only branch that should branch directly from the master.                 </p>
+                  It is the only branch that should branch directly from master.                 </p>
                 <p class="mb-0">
                   Once with the complete solution of the error, this branch must be joined both to the
                   Master (Master) and Development (Develop). 
