@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <title>GitFlow Workflow</title>
+  </head>
+<!--
+Sided Template
+https://templatemo.com/tm-527-sided
+-->
+  <body>
+    <div class="columns-bg">
+      <!-- Logo & Intro -->
+      <section id="logo" class="tm-section-logo">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 offset-sm-0 col-md-6 offset-md-6">
+              <div class="tm-site-name-container">
+                <div class="tm-site-name-container-inner">
+                  <h1 class="text-uppercase tm-text-primary tm-site-name">
+                    GitFlow Workflow
+                  </h1>
+                  <p class="tm-text-primary tm-site-description">
+                    Gitflow is one of the many styles of Git workflows.
+		  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Intro -->
+      <section id="intro" class="tm-p-1-section-1">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="tm-section-text-container">
+                <i class="tm-text-white">
+                  <p class="mb-4">
+                    Gitflow is kind of an abstract idea of a way to work in Git known as workflow. 
+		    This workflow defines a strict branching model <b>designed 
+		    around project publishing</b>, therefore it is ideal for projects
+		    that have a scheduled publish cycle.
+                  </p>
+                  <p class="mb-0">
+                    This provides a robust framework for managing larger projects by 
+		    assigning very specific functions to the different branches 
+		    and define how and when they should interact.                   
+		  </p>
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Place -->
+      <section id="master_develop">
+        <div class="container-fluid">
+          <div class="row">
+            <div
+              class="col-md-12 col-lg-6 tm-section-image-container tm-img-left-container"
+            >
+              <img src="img/master_develop.svg" alt="Image" class="img-fluid" />
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="tm-section-text-container-2">
+                <h2
+                  class="tm-text-primary tm-section-title-mb tm-sm-bg-white-alpha"
+                >
+                  Master & Develop
+                </h2>
+                <div class="tm-text-gray">
+                  <p class="mb-4">
+                    The flow begins with two branches, the Master 
+		    and Develop branch. Both have the main purpose of 
+		    recording the history of the project. The master branch 
+		    stores the history of the official release. The development 
+		    branch function is to record integration of features.
+		  </p>
+                  <p class="mb-0">
+                    The first step is to create a Development branch from the 
+		    main one. Then the other developers should clone the central 
+		    repository and create a follow-up branch for development.             
+		  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fusce, Section 4 -->
+      <section id="feature" class="tm-section-4">
+        <div class="container-fluid">
+          <div class="row flex-column-reverse flex-lg-row">
+            <div class="col-md-12 col-lg-6 tm-text-left-container">
+              <div class="tm-section-text-container-3 tm-bg-white-alpha h-100">
+                <h2 class="tm-text-accent tm-section-title-mb">
+                  Feature
+                </h2>
+                <p class="mb-4">
+		  The Feature branches come out from the Develop branch 
+                  with the purpose of integrating the functionalities
+                  required for a production version.
+		</p>
+                <p class="mb-0">
+                  
+		  Each function that is developed corresponds to its own branch, this can be
+                  submited to the central repository for backup or collaboration.
+		  Feature branches come out from the development branch.
+                  When a function is complete, it is merged back into the develop branch.
+                  Roles should never interact directly with the master branch.
+		</p>
+              </div>
+            </div>
+            <div
+              class="col-md-12 col-lg-6 tm-section-image-container tm-img-right-container"
+            >
+              <img
+                src="img/feature.svg"
+                alt="Image"
+                class="img-fluid tm-img-right"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Place -->
+      <section id="release">
+        <div class="container-fluid">
+          <div class="row">
+            <div
+              class="col-md-12 col-lg-6 tm-section-image-container tm-img-left-container"
+            >
+              <img src="img/release.svg" alt="Image" class="img-fluid" />
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="tm-section-text-container-2">
+                <h2
+                  class="tm-text-primary tm-section-title-mb tm-sm-bg-white-alpha"
+                >
+                  Release
+                </h2>
+                <div class="tm-text-gray">
+                  <p class="mb-4">
+		    When the project has enough functionality to launch a version,
+                    a branch is made to a publishing branch (Release) from the Development branch.
+                    When this branch is created, the next publish cycle starts. that means
+                    that no new functionalities can be added after this point, only bug fixes, documentation generation and others
+                    publication-oriented tasks.
+		  </p>
+                  <p class="mb-0">
+		    Once ready for the publication, the release branch is merged into the master
+                    and is tagged with a version number. Also, it should re-merge
+                    develop branch, which could have progressed since the beginning of the
+                    publication.
+		  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fusce, Section 4 -->
+      <section id="hot_fix" class="tm-section-4">
+        <div class="container-fluid">
+          <div class="row flex-column-reverse flex-lg-row">
+            <div class="col-md-12 col-lg-6 tm-text-left-container">
+              <div class="tm-section-text-container-3 tm-bg-white-alpha h-100">
+                <h2 class="tm-text-accent tm-section-title-mb">
+                  Hot Fix
+                </h2>
+                <p class="mb-4">
+		  If errors occur in the released production version, a maintenance branchknown as
+                  HotFix branch, is created to make the modifications that are required.
+                  This branch is based on the master branch (Master) and not on the Development branch (Develop).
+                  It is the only branch that should branch directly from the master.                 </p>
+                <p class="mb-0">
+                  Once with the complete solution of the error, this branch must be joined both to the
+                  Master (Master) and Development (Develop). 
+                  Then the master branch should be tagged with a new version number, an updated one.
+		</p>
+              </div>
+            </div>
+            <div
+              class="col-md-12 col-lg-6 tm-section-image-container tm-img-right-container"
+            >
+              <img
+                src="img/hot_fix.svg"
+                alt="Image"
+                class="img-fluid tm-img-right"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Beautiful Rollovers -->
+      <section id="gallery">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 tm-section-title-mb tm-gallery-title-col">
+              <h2 class="tm-section-title-2">Summary</h2>
+              <hr class="tm-section-title-underline" />
+            </div>
+
+            <div class="col-12">
+              <div class="grid">
+                <figure class="effect-duke mb-3">
+                  <img
+                    src="img/A.jpg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <h2>Master <span>Develop</span></h2>
+                    <p>Historical record of the project.</p>
+                    <a href="#">View more</a>
+                  </figcaption>
+                </figure>
+                <figure class="effect-duke">
+                  <img
+                    src="img/A.jpg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <h2><span>Feature</span></h2>
+                    <p>Flow that adds functionality.</p>
+                    <a href="page-2.html">View more</a>
+                  </figcaption>
+                </figure>
+                <figure class="effect-duke mb-3">
+                  <img
+                    src="img/A.jpg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <h2><span>Release</span></h2>
+                    <p>Release of completed feature.</p>
+                    <a href="#">View more</a>
+                  </figcaption>
+                </figure>
+                <figure class="effect-duke">
+                  <img
+                    src="img/A.jpg"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                  <figcaption>
+                    <h2><span>Hot Fix</span></h2>
+                    <p>Quick bug fixes.</p>
+                    <a href="#">View more</a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="col-md-6 tm-section-col-4">
+              <div class="tm-section-text-container-4">
+                <p class="tm-text-secondary mb-0">
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section_3" class="tm-section-4">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="tm-section-text-container-7 tm-bg-dark-gray">
+                <h2 class="tm-section-title-mb tm-text-primary-bright">
+                  Commands
+                </h2>
+                <hr
+                  class="tm-hr-mb tm-hr-primary-bright tm-section-underline ml-0"
+                />
+                <p class="tm-p-mb">
+                  > git .
+                </p>
+                <p class="tm-p-mb">
+                  > git.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="outro">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="tm-section-text-container-5 tm-text-white">
+                <p>
+                  Fabiola Aliaga Salvatierra.
+                </p>
+                <p>
+                  Antonio Pantoja.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <footer class="col-sm-12 col-md-6 offset-md-6 px-md-0">
+              <p class="tm-copyright-text mb-0 tm-text-primary">
+                2021 JALA Dev Bootcamp
+                - Design: <a rel="nofollow" href="https://www.facebook.com/templatemo">TemplateMo</a>
+              </p>
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- /.columns-bg -->
+  </body>
+</html>
